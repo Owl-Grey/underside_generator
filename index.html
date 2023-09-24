@@ -1,0 +1,59 @@
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Тестовое задание</title>
+  <link rel="stylesheet" href="style/style.css">
+  <!-- Автоматическая очистка кэша через описание версии файла -->
+  <body>
+    <div class="tab">
+      <button class="tablinks" onclick="openCity(event, 'London')">НПС</button>
+      <button class="tablinks" onclick="openCity(event, 'Paris')">Paris</button>
+      <button class="tablinks" onclick="openCity(event, 'Tokyo')">Одежда</button>
+      <button class="tablinks" onclick="openCity(event, 'Tokyo2')">Tokyo2</button>
+    </div>
+
+    <!-- Tab content -->
+    <div id="London" class="tabcontent">
+      <div class="npcgen">
+
+      </div>
+      <input class="count" type="number" name="count" value="1">
+      <select name="hard" class = "hardness">
+        <option value="ez" >Оч легко</option>
+        <option value="easy">Легко</option>
+        <option value="normal">Нормально</option>
+        <option value="hard">Сложно</option>
+        <option value="imposible">Невозможно</option>
+      </select>
+      <button type="button" name="button" onclick="npcgen()">Сгенерировать</button>
+    </div>
+
+    <div id="Paris" class="tabcontent">
+      <h3>Paris</h3>
+      <p>Paris is the capital of France.</p>
+    </div>
+
+    <div id="Tokyo" class="tabcontent">
+      <div class="lists">
+        <div class="">
+          <div class="weargen">
+          </div>
+          <button type="button" name="button" onclick="weargen()">Сгенерировать</button>
+        </div>
+        <div class="">
+          <div class="gungen">
+          </div>
+          <button type="button" name="button" onclick="gungen()">Сгенерировать</button>
+        </div>
+        </div>
+      </div>
+    <div id="Tokyo2" class="tabcontent">
+
+    </div>
+    <!-- <script src="/path/to/js.cookie.js"></script> -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/script.js"></script>
+    <!-- Автоматическая очистка кэша через описание версии файла -->
+  </body>
+  </html>
